@@ -4,14 +4,14 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+
 editor_options: 
   chunk_output_type: console
 ---
 
 # This is Alexis's awesome website
 
-You can learn about me [here](about.html)
+You can learn about me [here](about.html).
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
