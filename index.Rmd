@@ -11,6 +11,8 @@ editor_options:
 
 # This is Alexis's awesome website
 
+You can learn about me [here](about.Rmd.html)
+
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
 # Let's add some links
