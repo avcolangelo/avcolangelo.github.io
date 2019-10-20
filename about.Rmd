@@ -9,6 +9,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-My name is Alexis and I make websites for data science.
+My name is Alexis and I made this website for Data Science.
+
+Check out what books I've been reading on [goodreads](https://www.goodreads.com/user/show/90893623-lexi). 
+
 
 
