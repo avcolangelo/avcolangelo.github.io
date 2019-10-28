@@ -15,7 +15,7 @@ You can learn about me [here](about.html).
 
 ![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
 
-# Let's add some links
+# let's add a link
 
 
 I often use [google](https://www.google.com) to do **data science**. 
