@@ -1,5 +1,5 @@
 ---
-title: "My awesome website"
+title: "Alexis V Colangelo"
 output: 
   html_document:
     toc: true
@@ -9,20 +9,15 @@ editor_options:
   chunk_output_type: console
 ---
 
-# This is Alexis's awesome website
+# Welcome
+
+I'm currently a second-year MPH Epidemiology student with a certificate in Applied Biostatistics at [Columbia University Mailman School of Public Health](https://www.mailman.columbia.edu/). I created this website for the Data Science I course. 
+
 
 You can learn about me [here](about.html).
 
-![](https://media.giphy.com/media/drXGoW1iudhKw/giphy.gif)
+<img src="images/city2.jpg" style="width:75%">
 
-# let's add a link
+<img src="images/pup.jpg" style="width:75%">
 
-
-I often use [google](https://www.google.com) to do **data science**. 
-
-
-## let's add an image
-
-![](images/hat.jpg)
-
-
+<img src="images/city.jpg" style="width:75%">
