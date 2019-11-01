@@ -4,9 +4,57 @@ output:
   html_document:
     toc: true
     toc_float: true
-
 editor_options: 
   chunk_output_type: console
 ---
 
-Resume...
+## *Education:*
+
+### **Master of Public Health (MPH) in Epidemiology**
+#### **[Columbia University Mailman School of Public Health](https://www.mailman.columbia.edu/)**
+* Certificate in Applied Biostatistics
+* Expected May 2020
+* 3.7 GPA
+
+### **Advanced Certificate in Public Health**
+#### **[CUNY Graduate School of Health & Health Policy](https://sph.cuny.edu/)**
+* Post-baccalaureate certificate with coursework including fundamentals of biostatistics, epidemiology, social and behavioral health, environmental health, and health policy and management. 
+* May 2018
+
+### **Bachelor of Science (BS) in Human Development**
+#### **[Binghamton University College of Community & Public Affairs](https://www.binghamton.edu/ccpa/index.html)**
+* August 2015
+
+## *Experience*
+
+### **[Columbia University Department of Epidemiology](https://www.mailman.columbia.edu/academics/departments/epidemiology)**
+#### **Summer Practicum**
+* May - September 2019
+* Conducted literature review of hospitalization expenditures related to motor vehicle crashes by restraint status and seating position
+* Worked on the development of dummy tables to guide analyses for an ongoing observational study
+* Assisted in drafting an introduction and methods section for a publishable manuscript
+
+### **[Beacon Hill Staffing Group](https://www.beaconhillstaffing.com/)**
+#### **Temporary Administrative Assistant** 
+* November 2016 - July 2018
+* Worked various temporary part-time and full-time assignments ranging in length from single day to several months 
+* Positions included office assistant, receptionist, and meeting coordinator at both financial and non-profit firms
+* Duties included answering phones, managing calendars and conference rooms, and creating documents such as agendas 
+
+### **Memorial Sloan Kettering Cancer Center**
+#### **[Immigrant Health & Cancer Disparities](https://www.mskcc.org/departments/psychiatry-behavioral-sciences/immigrant-health) Intern** 
+* June 2017 - February 2018
+* Worked within the FOOD (Food to Overcome Outcome Disparities) program by travelling to local hospitals to provide pantry items for food insecure cancer patients 
+* Conducted monthly surveys of hospital pantry patients regarding treatment history, social wellbeing, and food security to assess personal needs and accumulate data for grant-funded studies 
+* Performed data entry and chart abstractions for an ongoing RCT into a research database 
+* Updated and researched new information for a program-wide resource guide for patient navigators
+
+### **[Christ Church United Methodist](https://christchurchnyc.org/)**
+#### **Administrative Assistant** 
+* September 2015 - May 2016
+* Sent multiple weekly email campaigns to 100+ subscribers and managed subscriber lists
+* Edited, proofread, and prepared print materials such as bulletins, seasonal booklets, and mailings
+* Collaborated with program staff to create print and digital promotional materials
+* Kept website current with relevant information and regularly posted events and blog posts
+* Answered and directed phone calls, sorted and distributed mail, and provided other office support
+

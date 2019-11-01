@@ -13,11 +13,5 @@ editor_options:
 
 I'm currently a second-year MPH Epidemiology student with a certificate in Applied Biostatistics at [Columbia University Mailman School of Public Health](https://www.mailman.columbia.edu/). I created this website for the Data Science I course. 
 
+<img src="images/city2.jpg">
 
-You can learn about me [here](about.html).
-
-<img src="images/city2.jpg" style="width:75%">
-
-<img src="images/pup.jpg" style="width:75%">
-
-<img src="images/city.jpg" style="width:75%">
