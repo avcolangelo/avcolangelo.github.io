@@ -9,10 +9,9 @@ navbar:
         href: about.html      
       - text: "Professional Experience"
         href: resume.html  
-      - text: "Plotly"
-        href: plotly.html
       - text: "Dashboard"
         href: dashboard.html
+    
     - icon: fa-envelope fa-lg
       href: mailto:<alexisvcolangelo@gmail.com>
     - icon: fa-linkedin fa-lg

@@ -1,9 +1,11 @@
 ---
-title: "My first dashboard"
+title: "NYC Restaurant Inspections"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -16,21 +18,14 @@ library(plotly)
 ```
 
 ```{r}
-data("nyc_airbnb")
+data(rest_inspec)
 
-set.seed(1)
+set.seed(3)
 
-nyc_airbnb = 
-  nyc_airbnb %>% 
-  mutate(rating = review_scores_location / 2) %>%
-  select(
-    neighbourhood_group, neighbourhood, rating, price, room_type, lat, long) %>%
-  filter(
-    !is.na(rating), 
-    neighbourhood_group == "Manhattan",
-    room_type == "Entire home/apt",
-    price %in% 100:500)  %>% 
-  sample_n(5000)
+rest_inspec = 
+  rest_inspec %>%
+    filter(boro == "MANHATTAN") %>%
+  sample_n(5000) 
 ```
 
 Column {data-width=650}
@@ -39,9 +34,8 @@ Column {data-width=650}
 ### Chart A
 
 ```{r}
-nyc_airbnb %>%
-  plot_ly(x = ~lat, y = ~long, type = "scatter", mode = "markers",
-          color = ~price, alpha = 0.5)
+rest_inspec %>%
+  plot_ly(x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers")
 ```
 
 Column {data-width=350}
@@ -49,19 +43,12 @@ Column {data-width=350}
 
 ### Chart B
 
-```{r}
-nyc_airbnb %>%
-  mutate(neighbourhood = fct_reorder(neighbourhood, price)) %>% 
-  plot_ly(y = ~price, color = ~neighbourhood, type = "box",
-          colors = "Set2")
-```
 
-### Chart C
+### Grades in Manhattan Restaurants
 
 ```{r}
-nyc_airbnb %>%
-  count(neighbourhood) %>%
-  mutate(neighbourhood = fct_reorder(neighbourhood, n)) %>%
-  plot_ly(x = ~neighbourhood, y = ~n, type = "bar")
+rest_inspec %>%
+  filter(!is.na(grade)) %>%
+  count(grade) %>%
+  plot_ly(x = ~grade, y = ~n, type = "bar")
 ```
-

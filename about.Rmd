@@ -9,10 +9,9 @@ editor_options:
   chunk_output_type: console
 ---
 
-I'm Alexis and I made this website for Data Science I course using R programming language. I'm based in the New York City area.
-
-Check out what books I've been reading on [goodreads](https://www.goodreads.com/user/show/90893623-lexi). 
-
-My dog Coconut:
+* I made this website for the Data Science I course at Columbia using R programming language.
+* I'm based in the New York City area.
+* Check out what books I've been reading on [goodreads](https://www.goodreads.com/user/show/90893623-lexi). 
+* Coconut:
 
 <img src="images/pup.jpg" style="width:75%">
