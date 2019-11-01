@@ -25,23 +25,31 @@ set.seed(3)
 rest_inspec = 
   rest_inspec %>%
     filter(boro == "MANHATTAN") %>%
-  sample_n(5000) 
+  sample_n(5000) %>% view
+
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Score & Inspection Date
 
 ```{r}
 rest_inspec %>%
-  plot_ly(x = ~cuisine_description, y = ~score, type = "scatter", mode = "markers")
+  plot_ly(x = ~inspection_date, y = ~score, 
+          type = "scatter", mode = "markers",
+          alpha = 0.5)
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Chart B
+
+```{r}
+
+```
+
 
 
 ### Grades in Manhattan Restaurants
