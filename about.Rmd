@@ -13,5 +13,4 @@ My name is Alexis and I made this website for Data Science.
 
 Check out what books I've been reading on [goodreads](https://www.goodreads.com/user/show/90893623-lexi). 
 
-
-
+<img src="images/pup.jpg" style="width:75%">
