@@ -27,23 +27,10 @@ rest_inspec =
   janitor::clean_names() %>% 
     filter(boro == "MANHATTAN") %>%
   sample_n(5000) %>% 
-  mutate(zipcode = factor(zipcode)) %>% view
 
 ```
 
 Column {data-width=650}
------------------------------------------------------------------------
-
-### Inspection Scores & Inspection Dates
-
-```{r}
-rest_inspec %>%
-  plot_ly(x = ~inspection_date, y = ~score, 
-          type = "scatter", mode = "markers",
-          alpha = 0.5)
-```
-
-Column {data-width=350}
 -----------------------------------------------------------------------
 
 ### Inspection Scores & Violation Types
@@ -52,12 +39,25 @@ Column {data-width=350}
 common_vio =
   rest_inspec %>% 
   count(violation_description, sort = TRUE) %>% 
-  top_n(8) %>% 
+  top_n(6) %>% 
   select(violation_description)
 
 inner_join(rest_inspec, common_vio, by = "violation_description") %>% 
+  mutate(violation_description = fct_reorder(violation_description, score)) %>%
   plot_ly(y = ~score, color = ~violation_description, type = "box",
           colors = "Set2")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Inspection Scores & Inspection Dates 
+
+```{r}
+rest_inspec %>%
+  plot_ly(x = ~inspection_date, y = ~score, 
+          type = "scatter", mode = "markers",
+          alpha = 0.5)
 ```
 
 
