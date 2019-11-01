@@ -5,10 +5,10 @@ navbar:
   right:
     - text: About
       menu:
-      - text: "Personal"
-        href: about.html      
-      - text: "Professional Experience"
+      - text: "Professional"
         href: resume.html  
+      - text: "Personal"
+        href: about.html 
     - text: Data Science
       menu:
       - text: "Dashboard"

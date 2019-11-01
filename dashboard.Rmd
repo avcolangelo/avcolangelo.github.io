@@ -24,15 +24,17 @@ set.seed(3)
 
 rest_inspec = 
   rest_inspec %>%
+  janitor::clean_names() %>% 
     filter(boro == "MANHATTAN") %>%
-  sample_n(5000) %>% view
+  sample_n(5000) %>% 
+  mutate(zipcode = factor(zipcode)) %>% view
 
 ```
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Score & Inspection Date
+### Inspection Scores & Inspection Dates
 
 ```{r}
 rest_inspec %>%
@@ -44,19 +46,33 @@ rest_inspec %>%
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Inspection Scores & Violation Types
 
 ```{r}
+common_vio =
+  rest_inspec %>% 
+  count(violation_description, sort = TRUE) %>% 
+  top_n(8) %>% 
+  select(violation_description)
 
+inner_join(rest_inspec, common_vio, by = "violation_description") %>% 
+  plot_ly(y = ~score, color = ~violation_description, type = "box",
+          colors = "Set2")
 ```
 
 
 
-### Grades in Manhattan Restaurants
+### Top Types of Cuisine in Manhattan
 
 ```{r}
-rest_inspec %>%
-  filter(!is.na(grade)) %>%
-  count(grade) %>%
-  plot_ly(x = ~grade, y = ~n, type = "bar")
+
+common_cuis =
+  rest_inspec %>% 
+  count(cuisine_description, sort = TRUE) %>% 
+  top_n(8) %>% 
+  select(cuisine_description)
+
+inner_join(rest_inspec, common_cuis, by = "cuisine_description") %>% 
+  count(cuisine_description) %>%
+  plot_ly(x = ~cuisine_description, y = ~n, type = "bar")
 ```
