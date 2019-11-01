@@ -26,7 +26,7 @@ rest_inspec =
   rest_inspec %>%
   janitor::clean_names() %>% 
     filter(boro == "MANHATTAN") %>%
-  sample_n(5000) %>% 
+  sample_n(5000)
 
 ```
 
